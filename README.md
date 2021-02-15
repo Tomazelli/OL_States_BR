@@ -10,7 +10,7 @@ O código foi passado para um lintter para formatação em boas praticas. (JSlin
 
 As declarações "var" foram substituidas por "let".
 
-Aspas simples ('') foram substituidas por aspas duplas ("").
+Aspas simples (') foram substituidas por aspas duplas (").
 
 Operadores ternarios foram colocados dentro de parentesis com quebra de linha:
 
