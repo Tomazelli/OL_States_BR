@@ -93934,10 +93934,10 @@ dragBox.on("boxend", function () {
     geometry.rotate(-rotation, anchor);
     var extent$1 = geometry.getExtent();
     candidateFeatures.forEach(function (feature) {
-      var geometry = feature.getGeometry().clone();
-      geometry.rotate(-rotation, anchor);
+      var geometryIntern = feature.getGeometry().clone();
+      geometryIntern.rotate(-rotation, anchor);
 
-      if (geometry.intersectsExtent(extent$1)) {
+      if (geometryIntern.intersectsExtent(extent$1)) {
         selectedFeatures.push(feature);
       }
     });
@@ -93987,7 +93987,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56541" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61114" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -65,13 +65,13 @@ dragBox.on("boxend", function () {
   // extent, the geometries intersect
   if (oblique) {
     let anchor = [0, 0];
-    var geometry = dragBox.getGeometry().clone();
+    let geometry = dragBox.getGeometry().clone();
     geometry.rotate(-rotation, anchor);
     let extent$1 = geometry.getExtent();
     candidateFeatures.forEach(function (feature) {
-      var geometry = feature.getGeometry().clone();
-      geometry.rotate(-rotation, anchor);
-      if (geometry.intersectsExtent(extent$1)) {
+      let geometryIntern = feature.getGeometry().clone();
+      geometryIntern.rotate(-rotation, anchor);
+      if (geometryIntern.intersectsExtent(extent$1)) {
         selectedFeatures.push(feature);
       }
     });
