@@ -1,0 +1,17 @@
+{
+  "name": "ol_states_br",
+  "version": "1.0.0",
+  "description": "Select states of Brazil by left clicking them, or by drawing boxes around them. Use Ctrl+Drag (Command+Drag on Mac) to draw boxes.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "author": "Felipe Tomazelli Crespo",
+  "license": "ISC",
+  "dependencies": {
+    "ol": "^6.5.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
